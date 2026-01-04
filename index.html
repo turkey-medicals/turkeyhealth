@@ -14,32 +14,67 @@
     th,td{padding:.75rem;text-align:left;border-bottom:1px solid #ddd}
     th{background-color:#f3f3f3}
   </style>
-	
 	<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://turkeyhealth.net/#organization",
-  "name": "Turkey Health Net",
-  "url": "https://turkeyhealth.net",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://turkeyhealth.net/wp-content/uploads/turkey-health-net-logo.png"
-  },
-  "description": "Turkey Health Net is an independent health tourism and medical industry information platform focusing on international healthcare conferences, publications, policy developments, and sector-level insights related to Turkey.",
-  "foundingLocation": {
-    "@type": "Place",
-    "name": "Turkey"
-  },
-  "knowsAbout": [
-    "Health Tourism",
-    "Medical Tourism Industry",
-    "International Healthcare Conferences",
-    "Healthcare Policy",
-    "Cross-Border Medical Services"
-  ],
-  "sameAs": [
-    "https://x.com/TurkeyHealthNet"
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://turkeyhealth.net/#organization",
+      "name": "Turkey Health Net",
+      "url": "https://turkeyhealth.net",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://turkeyhealth.net/wp-content/uploads/turkey-health-net-logo.png"
+      },
+      "description": "Turkey Health Net is an independent health tourism and medical industry information platform focusing on international healthcare conferences, publications, policy developments, and sector-level insights related to Turkey.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Turkey"
+      },
+      "knowsAbout": [
+        "Health Tourism",
+        "Medical Tourism Industry",
+        "International Healthcare Conferences",
+        "Healthcare Policy",
+        "Cross-Border Medical Services"
+      ],
+      "sameAs": [
+        "https://x.com/TurkeyHealthNet"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://turkeyhealth.net/#website",
+      "url": "https://turkeyhealth.net/",
+      "name": "Turkey Health Net",
+      "publisher": {
+        "@id": "https://turkeyhealth.net/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://turkeyhealth.net/#webpage",
+      "url": "https://turkeyhealth.net/",
+      "name": "Turkey Health, Aesthetic & Plastic Surgery – TurkeyHealth.net",
+      "isPartOf": {
+        "@id": "https://turkeyhealth.net/#website"
+      },
+      "about": {
+        "@id": "https://turkeyhealth.net/#organization"
+      },
+      "description": "Editorial guidance on aesthetic surgery trends, international patient flows, and health tourism developments in Turkey, including Istanbul and Antalya.",
+      "inLanguage": "en",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://turkeyhealth.net/wp-content/uploads/turkey-health-net-logo.png"
+      }
+    }
+
   ]
 }
 </script>
